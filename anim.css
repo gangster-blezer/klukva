@@ -1,0 +1,26 @@
+.bottom-on{
+	transform: translateY(100%);
+}
+
+.bottom-off{  /* отключение анимации */
+	transform: none;
+	transition: 1s;
+}
+
+.left-off{
+	transform: none;
+	transition: 1s;
+}
+
+.left-on{
+	transform: translateX(-100vw);
+}
+
+.proyv-on{
+	opacity: 0;
+}
+
+.proyv-off{
+	opacity: 1;
+	transition: 2s;
+}
