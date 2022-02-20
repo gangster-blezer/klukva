@@ -1,26 +1,45 @@
-.bottom-on{
+.bottom-start{
 	transform: translateY(100%);
 }
 
-.bottom-off{  /* отключение анимации */
+.bottom-end{  /* отключение анимации */
 	transform: none;
-	transition: 1s;
+	transition: transform 1s;
 }
 
-.left-off{
+.left-end{
 	transform: none;
-	transition: 1s;
+	transition: transform 1s;
 }
 
-.left-on{
+.left-start{
 	transform: translateX(-100vw);
 }
 
-.proyv-on{
-	opacity: 0;
+.right-end{
+	transform: none;
+	transition: transform 1s;
 }
 
-.proyv-off{
+.right-start{
+	transform: translateX(100vw);
+}
+
+.proyv-end{
 	opacity: 1;
-	transition: 2s;
+	transition: opacity 2s;
+}
+
+.proyv-end1{
+	opacity: 1;
+	transition: opacity 2s 0.5s;
+}
+
+.proyv-end2{
+	opacity: 1;
+	transition: opacity 2s 1s;
+}
+
+.proyv-start{
+	opacity: 0;
 }

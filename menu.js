@@ -2,3 +2,10 @@ function menu(add,del) {
 	document.getElementsByClassName(del)[0].classList.add(add);
 	document.getElementsByClassName(del)[0].classList.remove(del);
 }
+
+document.getElementsByClassName("phone")[0].addEventListener("click", phone);
+
+function phone(){
+	menu('black-part-on','black-part-off');
+	menu('back-call-window-on','back-call-window-off')
+}

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="anim.css">
+	<link rel="stylesheet" href="windows.css">
 	<title></title>
 </head>
 <body ondragstart="return false;" ondrop="return false;">
@@ -37,7 +38,6 @@
 				<a href="" class="menu-item">Диваны</a>
 				<a href="/" class="menu-item">Интерьерные кровати</a>
 				<a href="/" class="menu-item">Пуфы</a>
-				<a class="menu-item mobile-nav-zag">МАТРАСЫ</a>
 				<a class="menu-item mobile-nav-zag">2-Х ЯРУСНЫЕ КРОВАТИ</a>
 				<a href="/" class="menu-item">Mini</a>
 				<a href="/" class="menu-item">Calypso</a>
@@ -45,12 +45,13 @@
 				<a href="/" class="menu-item">Junior</a>
 				<a href="/" class="menu-item">Junior print</a>
 				<a href="/" class="menu-item">Sonata</a>
+				<a class="menu-item mobile-nav-zag">МАТРАСЫ</a>
 			</nav>
 	</div>
 	<div class="black-part-off"></div>
 	<a href="/" class="desing-project desing-project-off"><p>Запросить дизайн-проект</p></a>
 	<script src="script.js"></script>
-	<div class="phone left-on"><img src="img/phone.svg" alt=""></div>
+	<div class="phone"><img src="img/phone.svg" alt=""></div>
 	<script src="menu.js"></script>
 	<header class="header">
 		<div class="mini-header">
@@ -80,18 +81,18 @@
 	<main class="main">
 	<div class="slider">
 	<div class="sliderview">
-		<div class="slide bottom-on"></div>
-		<div class="slide bottom-on"></div>
-		<div class="slide bottom-on"></div>
+		<div class="slide bottom-start"></div>
+		<div class="slide bottom-start"></div>
+		<div class="slide bottom-start"></div>
 	</div>
 	<script src="slider.js"></script>
-	<div class="sl-left bottom-on"></div>
-	<div class="sl-right bottom-on"></div>
-	<button id="back" class="left-on" onclick="slide('back')"><img src="img/slider/back.png" alt=""></button>
-	<button id="next" class="left-on" onclick="slide('next')"><img src="img/slider/next.png" alt=""></button>
+	<div class="slblack sl-left bottom-start"></div>
+	<div class="slblack sl-right bottom-start"></div>
+	<button id="back" onclick="slide('back')"><img src="img/slider/back.png" alt=""></button>
+	<button id="next" onclick="slide('next')"><img src="img/slider/next.png" alt=""></button>
 </div>
 <div class="items">
-		<a href="for-teenagers.html" class="block anim" title="Для подростков">
+		<a href="for-teenagers.html" class="block anim proyv-start" title="Для подростков">
 		<h3 class="anim itemzag">ДЛЯ ПОДРОСТКОВ</h3>
 	<img class="imgd anim" src="img/1.png" alt="">
 	<div class="txt anim"></div>
@@ -101,7 +102,7 @@
 	</div>
 		</a>
 
-		<a href="/" class="block anim">
+		<a href="/" class="block anim proyv-start">
 		<h3 class="anim itemzag">ДЛЯ МАЛЫШЕЙ</h3>
 	<img class="imgd anim" src="img/2.png" alt="">
 	<div class="txt anim"></div>
@@ -112,7 +113,7 @@
 	</div>
 		</a>
 
-		<a href="/" class="block anim">
+		<a href="/" class="block anim proyv-start">
 		<h3 class="anim itemzag">МЯГКАЯ МЕБЕЛЬ</h3>
 	<img class="imgd anim" src="img/3.png" alt="">
 	<div class="txt anim"></div>
@@ -123,7 +124,7 @@
 	</div>
 		</a>
 
-		<a href="/" class="block anim">
+		<a href="/" class="block anim proyv-start">
 		<h3 class="anim itemzag">2-Х ЯРУСНЫЕ КРОВАТИ</h3>
 	<img class="imgd anim" src="img/4.png" alt="">
 	<div class="txt anim"></div>
@@ -136,15 +137,15 @@
 		</a>
 </div>
 	<div class="popular-slider contaner-center">
-		<h2 class="zag zag-pop"><span>ПОПУЛЯРНЫЕ </span>КОЛЛЕКЦИИ</h2>
+		<h2 class="zag zag-pop left-start"><span>ПОПУЛЯРНЫЕ </span>КОЛЛЕКЦИИ</h2>
 		<div class="poplular-slider-track">
 		<div class="popular">
-		<div class="popularinfo">
+		<div class="popularinfo left-start">
 			<h4 class="sub-zag none-select-txt">JUNIOR</h4>
 			<p class="small-txt none-select-txt">Подростковая мебель уже не должна быть детской </br> и милой, она должна быть стильной, что выражается</br>в строгих формах, интересной цветовой гамме</br>и высоком качестве. Именно это описание подходит</br>как нельзя лучше для коллекции Junior.</br></br>Cерия имеет очень продуманную эргономику,</br>включающую удобные шкафы, скрытые полки</br>и дополнительные места хранения, позволяющие</br>легко поддерживать порядок в комнате.</p>
 			<div class="button-klukva small-txt popularbtn"><a href="junior.html" style="color: white;">Перейти в каталог</a></div>
 		</div>
-			<img src="img/polularslider/banner.png" class="cimg" alt="" draggable="false">
+			<img src="img/polularslider/banner.png" class="cimg popular_first_img right-start" alt="" draggable="false">
 		</div>
 
 		<div class="popular">
@@ -196,25 +197,25 @@
 	</div>
 
 	<div class="about-us contaner-center">
-			<div class="about-item">
+			<div class="about-item proyv-start">
 				<div class="aboutImg">
 					<img src="img/aboutUs/shilde.svg" alt="">
 				</div>
 				<p>Гарантированная безопасность:</br>вся наша мебель сертифицирована</br>и проходит многоуровневый</br>контроль.</p>
 			</div>
-			<div class="about-item">
+			<div class="about-item proyv-start">
 				<div class="aboutImg">
 					<img src="img/aboutUs/soft.svg" alt="">
 				</div>
 				<p>Более 20 коллекций и более 100</br>цветовых решений и тканей на выбор</br>позволят создать уникальный проект</br>для любого пространства</p>
 			</div>
-			<div class="about-item">
+			<div class="about-item proyv-start">
 				<div class="aboutImg">
 					<img src="img/aboutUs/3dp.svg" alt="">
 				</div>
 				<p>Бесплатно сделаем индивидуальный</br>3-D проект дизайна</br>вашей комнаты с учетом ваших</br>пожеланий</p>
 			</div>
-			<div class="about-item">
+			<div class="about-item proyv-start">
 				<div class="aboutImg">
 					<img src="img/aboutUs/material.svg" alt="">
 				</div>
@@ -224,7 +225,7 @@
 	<div class="best contaner-center">
 	<h2 class="zag"><span>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ </span>МЕСЯЦА</h2>
 	<div class="best-slider-track">
-		<div class="best-slide">
+		<div class="best-slide left-start">
 			<img src="img/bestslide/1.png" alt="" draggable="false">
 		</div>
 		<div class="best-slide">
@@ -246,8 +247,8 @@
 	<script src="best-slider.js"></script>
 </div>
 <div class="map">
-	<div id="YMapsID"></div>
-    <div class="map-info">
+	<div id="YMapsID" class="yandexmap bottom-start"></div>
+    <div class="map-info proyv-start">
     	<div class="shop-adr">
     		<h3>АДРЕСА ШОУРУМОВ:</h3>
     		<div class="shop">
@@ -284,9 +285,9 @@
     <script src="map.js"></script>
 </div>
 	<div class="contactus contaner-center">
-		<h2 class="zag"><span>ВСЕГДА ПОМОЖЕМ </span>С ВЫБОРОМ</h2>
-		<img src="img/contactus.png" class="cimg" alt="">
-		<div class="contactus-info">
+		<h2 class="contact-zag zag proyv-start"><span>ВСЕГДА ПОМОЖЕМ </span>С ВЫБОРОМ</h2>
+		<img src="img/contactus.png" class="contact-img cimg proyv-start" alt="">
+		<div class="contactus-info proyv-start">
 			<h4 class="sub-zag">СВЯЖИТЕСЬ С НАМИ</h4>
 			<p class="small-txt">Оставьте заявку на сайте, позвоните или напишите нам — и мы поможем вам создать комнату мечты для вас и вашего малыша.</br></br>Если нужно, мы легко превратим детскую в комнату принцессы, каюту капитана пиратского корабля или настоящие джунгли.</br></br>Просто расскажите нам о вашей интерьерной задаче,а мы предложим оптимальное решение с учетом всех пожеланий, которое идеально впишется в ваше пространство.</p>
 			<div class="contactusbtns">
@@ -298,7 +299,29 @@
 	</div>
 
 </main>
-<iframe class="klukva-video" src="https://www.youtube.com/embed/17NbNGbotUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="klukva-video proyv-start" src="https://www.youtube.com/embed/17NbNGbotUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="back-call-window back-call-window-off">
+	<div class="close-window">
+		
+	</div>
+	<div class="call-form-cont">
+		<p class="zag25">ЗАКАЗАТЬ <span>ЗВОНОК</span></p>
+		<form action="/" class="form">
+			<p>Ваше имя</p>
+			<input type="text" class="text-inp">
+			<p>Контактный телефон</p>
+			<input type="text" class="text-inp">
+			<p>Комментарий</p>
+			<textarea name="comment" style="resize: none; height: 64px;" id="" cols="30" rows="5" class="text-inp"></textarea>
+			<p><input type="submit" value="Позвоните мне" class="button-klukva submbtn"></p>
+		</form>
+		<p class="pers">Нажимая на кнопку, я даю согласие на обработку персональных данных и принимаю условия пользовательского соглашения</p>
+	</div>
+	<div class="img-close-cont">
+		<img src="img/windows/back_call.png" alt="">
+	</div>
+	
+</div>
 <footer class="footer">
 	<img src="img/logo_footer.svg" alt="">
 </footer>

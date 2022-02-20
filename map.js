@@ -14,7 +14,7 @@ function init() {
         
     // 7. Балун.
     var myPlacemark = new ymaps.Placemark([55.609629,37.605176], {
-        balloonContentHeader: 'Магазин в ТЦ "ГРАНД ЮГ"',
+        balloonContentHeader: 'Шоурум в ТЦ "ГРАНД ЮГ"',
         balloonContentBody: "<strong>Адрес:</strong> Москва, м.Пражская, ул. Кировоградская, д.15</br><strong>Тел. салона:</strong> +7 (909) 641 28 78</br><strong>Email:</strong> akossta.grand-south@mail.ru",
     }, {
         iconLayout: 'default#image',
@@ -28,8 +28,8 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
 
     var myPlacemark = new ymaps.Placemark([55.885481,37.438037], {
-        balloonContentHeader: 'Магазин в ТЦ "ГРАНД"',
-        balloonContentBody: "<strong>Адрес:</strong> Ленинградское шоссе, 100 метров от МКАД (в сторону области) г. Химки, Бутаково 4</br><strong>Местоположение в комплексе:</strong> Центр детской мебели, цокольный этаж (вход рядом с маг. \"Эльдорадо\")</br><strong>Тел. салона:</strong> +7 (495) 780-33-33 доб. 44.41</br><strong>Email:</strong> akosstagrand@mail.ru",
+        balloonContentHeader: 'Шоурум в ТЦ "ГРАНД"',
+        balloonContentBody: "<strong>Адрес:</strong> МО, г. Химки, Бутаково 4</br><strong>Местоположение в комплексе:</strong> Центр детской мебели, цокольный этаж (вход рядом с маг. \"Эльдорадо\")</br><strong>Тел. салона:</strong> +7 (495) 780-33-33 доб. 44.41 <br>8-917-508-51-30</br><strong>Email:</strong> akosstagrand@mail.ru",
     }, {
         iconLayout: 'default#image',
         iconImageHref: "img/placeholder.png",
@@ -42,8 +42,8 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
 
     var myPlacemark = new ymaps.Placemark([55.702835,37.355722], {
-        balloonContentHeader: 'Магазин в ТЦ "ТРИ КИТА"',
-        balloonContentBody: '<strong>Адрес:</strong> Мo., Новоивановское пгт, ул. Луговая, 1</br><strong>Местоположение в комплексе:</strong> этаж 4, отдел "Детская мебель"</br><strong>Тел. салона:</strong> +7 (495) 780-37-37 доб. 2749</br><strong>Email:</strong> akossta-kit@mail.ru',
+        balloonContentHeader: 'Шоурум в ТЦ "ТРИ КИТА"',
+        balloonContentBody: '<strong>Адрес:</strong> МО, Новоивановское пгт, ул. Луговая, 1</br><strong>Местоположение в комплексе:</strong> этаж 4, отдел "Детская мебель"</br><strong>Тел. салона:</strong> +7 (495) 780-37-37 доб. 2749 <br>8-991-927-95-62</br><strong>Email:</strong> akossta-kit@mail.ru',
     }, {
         iconLayout: 'default#image',
         iconImageHref: "img/placeholder.png",

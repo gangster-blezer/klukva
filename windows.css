@@ -1,0 +1,69 @@
+.back-call-window{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: white;
+	width: 760px;
+	height: 460px;
+	border-radius: 20px;
+	transition: opacity 0.8s;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.back-call-window-on{
+	z-index: 11;
+	opacity: 1;
+}
+
+.back-call-window-off{
+	z-index: -1;
+	opacity: 0;
+}
+
+.close-window{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 24px;
+	height: 24px;
+	background-image: url(img/windows/close.svg);
+}
+
+.form>p{
+	margin: 8px auto;
+	font-size: 14px;
+}
+
+.pers{
+	width: 280px;
+	font-size: 8px;
+}
+
+.zag25{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.zag25>span{
+	color: #EE2E3B;
+}
+
+.submbtn{
+	padding: 5px 12px;
+}
+
+.text-inp{
+	border: 0.5px solid #525252;
+	width: 260px;
+	height: 32px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+.text-inp:focus{
+	border: 1px solid black;
+}
