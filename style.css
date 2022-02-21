@@ -438,6 +438,7 @@ input[type=submit]{
 
 .best-slide>img{
 	width: 100%;
+	height: 100%;
 }
 
 .best-slider-btns{

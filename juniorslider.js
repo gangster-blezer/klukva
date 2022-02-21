@@ -1,6 +1,7 @@
 var numprevb = 1;
 var trackb = document.getElementsByClassName('slider-color-wrapper')[0];
 //var btn_active = "activebest-sl-btn";
+var fin;
 
 function slidesetb(n,bt) {
   if(numprevb==undefined){
@@ -9,13 +10,13 @@ function slidesetb(n,bt) {
 
     //console.log(numprev);
 
-  if(n==9){
+  if(n==fin+1){
     n = 1;
     console.log("есть");
   }
 
   if(n==0){
-    n=8;
+    n=fin;
   }
 
   
