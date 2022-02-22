@@ -32,6 +32,10 @@
 	background-image: url(img/windows/close.svg);
 }
 
+.close-window:hover{
+	cursor: pointer;
+}
+
 .form>p{
 	margin: 8px auto;
 	font-size: 14px;
