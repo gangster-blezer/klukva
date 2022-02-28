@@ -12,6 +12,10 @@ function slide(slide) {
 	if(slide=="back"){
 		slidenum--;
 	}
+  //для адаптива при изменений размеров окна
+  slidew = document.querySelector('.slide').offsetWidth;
+  slideside = (document.querySelector('.slider').offsetWidth-slidew)/2;
+  tr = slidew-slideside;
 
 	let start = Date.now(); // запомнить время начала
   let time = 500;

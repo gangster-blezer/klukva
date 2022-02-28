@@ -29,7 +29,7 @@ function init() {
 
     var myPlacemark = new ymaps.Placemark([55.885481,37.438037], {
         balloonContentHeader: 'Шоурум в ТЦ "ГРАНД"',
-        balloonContentBody: "<strong>Адрес:</strong> МО, г. Химки, Бутаково 4</br><strong>Местоположение в комплексе:</strong> Центр детской мебели, цокольный этаж (вход рядом с маг. \"Эльдорадо\")</br><strong>Тел. салона:</strong> +7 (495) 780-33-33 доб. 44.41 <br>8-917-508-51-30</br><strong>Email:</strong> akosstagrand@mail.ru",
+        balloonContentBody: "<strong>Адрес:</strong> МО, г. Химки, Бутаково 4</br><strong>Местоположение в комплексе:</strong> Центр детской мебели, цокольный этаж (вход рядом с маг. \"Эльдорадо\")</br><strong>Тел. салона:</strong> +7 (495) 780-33-33 доб. 44.41 <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8-917-508-51-30</br><strong>Email:</strong> akosstagrand@mail.ru",
     }, {
         iconLayout: 'default#image',
         iconImageHref: "img/placeholder.png",
@@ -43,7 +43,7 @@ function init() {
 
     var myPlacemark = new ymaps.Placemark([55.702835,37.355722], {
         balloonContentHeader: 'Шоурум в ТЦ "ТРИ КИТА"',
-        balloonContentBody: '<strong>Адрес:</strong> МО, Новоивановское пгт, ул. Луговая, 1</br><strong>Местоположение в комплексе:</strong> этаж 4, отдел "Детская мебель"</br><strong>Тел. салона:</strong> +7 (495) 780-37-37 доб. 2749 <br>8-991-927-95-62</br><strong>Email:</strong> akossta-kit@mail.ru',
+        balloonContentBody: '<strong>Адрес:</strong> МО, Новоивановское пгт, ул. Луговая, 1</br><strong>Местоположение в комплексе:</strong> этаж 4, отдел "Детская мебель"</br><strong>Тел. салона:</strong> +7 (495) 780-37-37 доб. 2749 <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8-991-927-95-62</br><strong>Email:</strong> akossta-kit@mail.ru',
     }, {
         iconLayout: 'default#image',
         iconImageHref: "img/placeholder.png",

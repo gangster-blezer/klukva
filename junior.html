@@ -112,9 +112,16 @@
 			</div>
 		</div>
 	</div>
+
+	<style>
+		.slider-color-wrapper{
+			width: calc(100vw * 8);
+		}
+	</style>
+
 	<h2 class="zag contaner-center" style="width: 90%;">ЦВЕТОВЫЕ РЕШЕНИЯ <span>JUNIOR</span><a name="colorslider"></a></h2>
 	<div class="slider-color">
-		<img src="img/Next.svg" class="arrow" alt="" onclick="slidesetb(numprevb+1,this)">
+		<img src="img/Next.svg" class="arrow" alt="next_arrow" onclick="colorSlider.setSlide('next')">
 		<div class="slider-color-wrapper">
 			<div class="slide-color">
 				<a draggable="false" class="polu-slider-link">
@@ -205,9 +212,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="juniorslider.js"></script>
+	<script src="SuperSlider.js"></script>
 	<script>
-		fin=8;
+		var colorSlider = new SuperSlider("slider-color-wrapper","slide-color","full","trans");
 	</script>
 	<div class="info-klukva contaner-center">
 	<h2 class="zag" style="margin-top: 0px;">МЕБЕЛЬ <span>КЛЮКВА</span></h2>

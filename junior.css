@@ -14,6 +14,10 @@ a{
 	text-decoration: none;
 }
 
+.trans{
+	transition: 0.8s;
+}
+
 .contaner-center{
 	margin-left: auto;
 	margin-right: auto;
@@ -125,7 +129,8 @@ a{
 
 .slider-color{
 	position: relative;
-	width: 90vw;
+	-width: 90vw;
+	width: 100%;
 	overflow: hidden;
 	padding-bottom: 23px;
 }
@@ -133,15 +138,13 @@ a{
 .slide-color{
 	width: 90vw;
 	display: flex;
+	justify-content: space-between;
+	margin-right: 10vw;
 }
 
 .slide-color>a{
 	position: relative;
-	
-}
-
-.slide-color>a:nth-child(2n){
-	margin-left: 20px;
+	width: 44vw;
 }
 
 .arrow{
@@ -149,21 +152,20 @@ a{
 	width: 100px;
 	z-index: 5;
 	right: 0px;
-	transform: translateY(50%);
+	transform: translate(-50%,-50%);
 	top: 50%;
 }
 
 .slider-color-wrapper{
 	display: flex;
-	width: calc(100vw * 8);
-	
+	width: 600vw;
+	user-select: none;
 }
 
 .polu-slide{
 	position: relative;
 	user-select: none;
-	width: 45vw;
-	-width: 600px;
+	width: 44vw;
 }
 
 .name-junion{

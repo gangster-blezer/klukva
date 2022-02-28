@@ -16,6 +16,11 @@
 	transform: translateX(-100vw);
 }
 
+.left-end2{
+	transform: none;
+	transition: transform 1s 1s;
+}
+
 .right-end{
 	transform: none;
 	transition: transform 1s;

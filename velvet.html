@@ -75,7 +75,7 @@
 		</div>
 	</header>
 	<p style="margin-left: 30px;"><a href="index.html" class="vety-little-txt">Главная</a> - 
-		<a href="/" class="vety-little-txt" >Каталог</a> - <a href="for-teenagers.html" class="vety-little-txt">Для подростков</a> - <a href="junior_print.html" class="vety-little-txt">Junior print</a></p>
+		<a href="/" class="vety-little-txt" >Каталог</a> - <a href="for-teenagers.html" class="vety-little-txt">Для подростков</a> - <a href="junior_print.html" class="vety-little-txt">Velvet</a></p>
 	<div class="junior contaner-center">
 		<h2 class="zag zag-m-20">КОЛЛЕКЦИЯ <span>VELVET</span></h2>
 		<img src="img/collections/velvet.png" class="cimg" alt="">
@@ -117,7 +117,7 @@
 
 	<h2 class="zag contaner-center" style="width: 90%;">ЦВЕТОВЫЕ РЕШЕНИЯ <span>VELVET</span><a name="colorslider"></a></h2>
 	<div class="slider-color">
-		<img src="img/Next.svg" class="arrow" alt="" onclick="slidesetb(numprevb+1,this)">
+		<img src="img/Next.svg" class="arrow" alt="next_arrow" onclick="colorSlider.setSlide('next')">
 		<div class="slider-color-wrapper">
 			<div class="slide-color">
 				<a draggable="false" class="polu-slider-link">
@@ -166,9 +166,9 @@
 			
 		</div>
 	</div>
-	<script src="juniorslider.js"></script>
+	<script src="SuperSlider.js"></script>
 	<script>
-		fin=4;
+		var colorSlider = new SuperSlider("slider-color-wrapper","slide-color","full","trans");
 	</script>
 	<div class="info-klukva contaner-center">
 	<h2 class="zag" style="margin-top: 0px;">МЕБЕЛЬ <span>КЛЮКВА</span></h2>

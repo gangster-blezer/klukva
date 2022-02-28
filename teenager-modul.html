@@ -76,21 +76,13 @@
 		</div>
 	</header>
 	<main>
-		<script src="podsk.js"></script>
 		<p style="margin-left: 30px;"><a href="index.html" class="vety-little-txt">Главная</a> - 
 		<a href="/" class="vety-little-txt" >Каталог</a> - <a href="/" class="vety-little-txt">Для подростков</a></p>
 		<div class="teenagers-img-logo contaner-center">
 			<h1 class="zag zag-m-20">КОЛЛЕКЦИЯ <span>TEENAGER</span></h1>
-			<div class="plus-cont">
-				<div class="win win-off">
-					<div class="info-win">
-						<div style="font-size: 10px; font-weight: bold;">Шкаф компактный</div>
-						<div style="font-size: 8px; color: ;">Арт. 12345679</div>
-						<div class="price" style="font-size: 10px;">24 000 <span class="rub" style="font-size: 7px;">₽</span></div>
-					</div>
-				</div>
-				<button class="plus" onclick="openWin(this)"></button>
-				<button class="plus plus2" onclick="openWin(this)"></button>
+			<div class="plus-cont" id="teenager_first">
+				<button class="plus" data_id="1" opened="false" onclick="openWin(this)"></button>
+				<button class="plus plus2" data_id="2" opened="false" onclick="openWin(this)"></button>
 				<img src="img/teenager-modul/1.jpg" class="modul-img" alt="">
 			</div>
 		</div>
@@ -154,42 +146,44 @@
 				<span class="zag-16">Цвета корпуса</span>
 				<div class="corpus-colors"  style="width: 286px; margin-top: 10px;">
 					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/1.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/2.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/3.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/4.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/5.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/6.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/7.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/8.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/9.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/10.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/11.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/12.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/13.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/14.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/15.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/16.png);" title="Белый фасадный"></button>
-					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/17.png);" title="Белый фасадный"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/2.png);" title="Белый снег"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/3.png);" title="Дуб белый"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/4.png);" title="Дуб серый"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/5.png);" title="Дуб Галифакс
+натуральный"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/6.png);" title="Дуб Галифакс
+табак"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/7.png);" title="Камень светлый"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/8.png);" title="Камень темный"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/9.png);" title="Красный чили"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/10.png);" title="Роза"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/11.png);" title="Королевский синий"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/12.png);" title="Лимонный сорбет"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/13.png);" title="Шоколад"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/14.png);" title="Солнечный свет"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/15.png);" title="Пламя"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/16.png);" title="Зеленая мамба"></button>
+					<button class="color-corp-btn" style="background-image: url(img/colors/Teenager/Buttons/17.png);" title="Капри синий"></button>
 				</div>
 				<span class="zag-16">Цвета фасада</span>
 				<div class="fasad-colors" style="width: 286px; margin-top: 10px;">
 					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/1.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/2.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/3.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/4.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/5.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/6.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/7.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/8.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/9.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/10.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/11.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/12.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/13.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/14.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/15.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/16.png);" title="Белый фасадный"></button>
-					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/17.png);" title="Белый фасадный"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/2.png);" title="Белый снег"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/3.png);" title="Дуб белый"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/4.png);" title="Дуб серый"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/5.png);" title="Дуб Галифакс"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/6.png);" title="Дуб Галифакс"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/7.png);" title="Камень светлый"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/8.png);" title="Камень темный"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/9.png);" title="Красный чили"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/10.png);" title="Роза"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/11.png);" title="Королевский синий"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/12.png);" title="Лимонный сорбет"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/13.png);" title="Шоколад"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/14.png);" title="Солнечный свет"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/15.png);" title="Пламя"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/16.png);" title="Зеленая мамба"></button>
+					<button class="color-fasad-btn" style="background-image: url(img/colors/Teenager/Buttons/17.png);" title="Капри синий"></button>
 				</div>
 			</div>
 		</div>
@@ -206,5 +200,6 @@
 			</div>
 		</div>
 	</main>
+	<script src="podsk.js"></script>
 </body>
 </html>
