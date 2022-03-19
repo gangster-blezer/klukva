@@ -79,9 +79,9 @@ window.onload = function(){
 	let map_anim = new anim('yandexmap',1,"bottom-end","bottom-start",document.getElementsByClassName('map')[0]);
 	let map_info_anim = new anim('map-info',1,"proyv-end","proyv-start",document.getElementsByClassName('map')[0]);
 
-	let contact_us_zag_anim = new anim('contact-zag',1,"proyv-end","proyv-start",document.getElementsByClassName('contact-img')[0]);
-	let contact_us_img_anim = new anim('contact-img',1,"proyv-end1","proyv-start",document.getElementsByClassName('contact-img')[0]);
-	let contact_us_info_anim = new anim('contactus-info',1,"proyv-end2","proyv-start",document.getElementsByClassName('contact-img')[0]);
+	let contact_us_zag_anim = new anim('contact-zag',1,"proyv-end","proyv-start",document.getElementsByClassName('contactus')[0]);
+	let contact_us_img_anim = new anim('contact-img',1,"proyv-end1","proyv-start",document.getElementsByClassName('contactus')[0]);
+	let contact_us_info_anim = new anim('contactus-info',1,"proyv-end2","proyv-start",document.getElementsByClassName('contactus')[0]);
 	
 	let video_anim = new anim('klukva-video',1,"proyv-end","proyv-start",document.getElementsByClassName('klukva-video')[0]);
 

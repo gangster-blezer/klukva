@@ -32,6 +32,14 @@ input[type=submit]{
 	border: none;
 }
 
+button:active, button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
 .main{
 	margin-top: 71px;
 }
@@ -606,10 +614,15 @@ input[type=submit]{
 @media (max-width: 481px){
 	.zag{
 		font-size: 30px;
+		text-align: center;
 	}
 
 	.small-txt{
 		font-size: 18px;
+	}
+
+	.desing-project{
+		display: none;
 	}
 
 	.slider{
@@ -691,6 +704,7 @@ input[type=submit]{
 
 	#YMapsID{
 		width: 100%;
+		h
 	}
 
 	.map-info{
@@ -717,6 +731,32 @@ input[type=submit]{
 
 	.adress>h4,.adress>p{
 		color: #636363;
+	}
+
+	.contact-img{
+		display: none;
+	}
+
+	.contact-sub-zag{
+		display: none;
+	}
+
+	.contact-txt{
+		text-align: center;
+	}
+
+	.contact-soc{
+		display: none;
+	}
+
+	.contactusbtns{
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+
+	.klukva-video{
+		display: none;
 	}
 
 	.small-btn-txt{
