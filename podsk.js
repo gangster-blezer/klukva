@@ -20,6 +20,16 @@ function openWin(el){
 }
 
 
+/*document.getElementsByClassName("plus")[0].addEventListener('mouseover', function() {
+	openWin(this);
+});
+
+document.querySelector('div[data_w_id="'+1+'"]').addEventListener('mouseleave', function() {
+	console.log("наведение");
+	openWin(this);
+}); */
+
+
 
 function createWin(id,x,y,contaner){
 	model = dataInfo[id];

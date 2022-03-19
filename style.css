@@ -479,7 +479,7 @@ input[type=submit]{
 				align-items: center;
 				justify-content: space-between;
         width: 400px;
-        height: 430px;
+        height: 480px;
         
 }
 
@@ -599,77 +599,127 @@ input[type=submit]{
 	background-color: #000000;
 }
 
-/*@media (max-width: 1070px){
-	.h-menu{
-		display: none;
-	}
-
-	.contaner-center{
-		width: 85%;
-		-min-width: 700px;
-		justify-content: center;
-	}
-
-	.zag{
-		text-align: center;
-	}
-
-	.popular-slider{
-		-width: 700px
-	}
-
-	.poplular-slider-track{
-		right: -200%;
-	}
-
-	.popular{
-		width: 700px
-	}
-
-	.popularinfo{
-		order: 2;
-	}
+.slider_names{
+	display: none;
 }
 
-@media (max-width: 680px){
-	.tel{
-		display: none;
+@media (max-width: 481px){
+	.zag{
+		font-size: 30px;
 	}
 
-	.mobile-menu{
-		
+	.small-txt{
+		font-size: 18px;
 	}
 
 	.slider{
-		height: calc(50vh - 71px);
+		height: calc(100vw / 1.3);
 	}
 
-	
+	.slide{
+		width: 100vw;
+	}
 
-	.sl-left{
-	width: 0;
-	height: 0;
-	background-color: black;
-}
+	.slblack, #back, #next{
+		display: none;
+	}
 
-.sl-right{
-	width: 0;
-	height: 0;
-	background-color: black;
-}
 
-.slide{
-	height: 100%;
-	background-position:center center;
-	background-size: cover;
-}
+	.items{
+		justify-content: space-evenly;
+		background-color: white;
+	}
 
-#next{
-	width: 60px
-}
+	.block{
+		margin-top: 10px;
+		width: 48%
+	}
 
-#back{
-	width: 60px
-}
+	.itemzag{
+		position: absolute;
+		bottom: 0;
+		font-size: 12px;
+		background-color: black;
+		opacity: 0.5;
+		height: 35px
+	}
 
+	.cimg{
+		width: 100%;
+	}
+
+	.popularinfo>h4{
+		display: none;
+	}
+
+	.slider_names{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.pop-sl-itm{
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 3px;
+		border-bottom: 2px solid transparent;
+		color: #CDCBCB;
+		transition: 1s;
+	}
+
+	.pop-sl-itm-on{
+		border-bottom: 2px solid black;
+		color: black;
+		cursor: pointer;
+	}
+
+	.slider-btns{
+		display: none;
+	}
+
+	.about-item{
+		flex-direction: row;
+		width: auto;
+	}
+
+
+	.map{
+		flex-wrap: wrap;
+		background-color: white;
+		opacity: 1;
+	}
+
+	#YMapsID{
+		width: 100%;
+	}
+
+	.map-info{
+		width: 100%;
+		height: 100px;
+		background-color: white;
+		border-bottom: 1px solid #E7E7E7;
+		justify-content: center;
+	}
+
+	.shop-adr{
+		width: 100%;
+		height: auto;
+		align-items: center;
+	}
+
+	.shop-adr>h3,.office,.shop{
+		display: none;
+	}
+
+	.map-on{
+		display: flex;
+	}
+
+	.adress>h4,.adress>p{
+		color: #636363;
+	}
+
+	.small-btn-txt{
+		font-size: 14px;
+	}
 }

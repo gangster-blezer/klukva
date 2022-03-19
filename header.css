@@ -267,3 +267,34 @@ ul{
 	width: 33px;
 	height: 33px;
 }
+
+@media (max-width: 481px) {
+  .h-menu{
+  	display: none
+  }
+
+  .tel{
+  	display: none;
+  }
+
+  .soc{
+  	display: none;
+  }
+
+  .shopcart{
+  	background-color: black;
+  }
+
+  .mini-header{
+  	width: 65%;
+  }
+
+  .left-header{
+  	width: 100%;
+  }
+
+  .left-header>button{
+
+  }
+
+}
