@@ -187,6 +187,25 @@ button::-moz-focus-inner {
 	background-size: cover;
 }
 
+.gl-slider-btns{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.gl-slider-btn{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	border: 1px solid #E5E5E5;
+	transition: 1s;
+}
+
+.gl-slider-btn-on{
+	background-color: #00AAAD;
+}
+
 #next{
 	position: absolute;
 	bottom: 20%;
@@ -621,6 +640,18 @@ button::-moz-focus-inner {
 		font-size: 18px;
 	}
 
+	.about-us{
+		width: 100%;
+	}
+
+	.popular-slider, .popular, .best, .best-slide,.contactus{
+		width: 96vw;
+	}
+
+	.poplular-slider-track{
+		width: calc((96vw * 5) + 80px);
+	}
+
 	.desing-project{
 		display: none;
 	}
@@ -657,6 +688,31 @@ button::-moz-focus-inner {
 		height: 35px
 	}
 
+	.block:hover:after{
+		opacity: 0;
+		transform: none;
+	}
+
+	.block:hover .long{
+		transform: translateX(-100%);
+	}
+
+	.block:hover .txt{
+		transform: none;
+	}
+
+	.block:hover .imgd{
+		cursor: pointer;
+		transform: scale(1.3);
+		opacity: 1;
+		-transform: translateX(50%);
+	}
+
+
+	.popular{
+		flex-direction: column;
+	}
+
 	.cimg{
 		width: 100%;
 	}
@@ -668,7 +724,9 @@ button::-moz-focus-inner {
 	.slider_names{
 		display: flex;
 		justify-content: space-between;
-		width: 100%;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	.pop-sl-itm{
@@ -703,8 +761,9 @@ button::-moz-focus-inner {
 	}
 
 	#YMapsID{
+		margin-top: 10px;
 		width: 100%;
-		h
+		height: 70vh;
 	}
 
 	.map-info{
@@ -731,6 +790,10 @@ button::-moz-focus-inner {
 
 	.adress>h4,.adress>p{
 		color: #636363;
+	}
+
+	.contactus{
+		justify-content: center;
 	}
 
 	.contact-img{
