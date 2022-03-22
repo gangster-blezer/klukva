@@ -25,6 +25,10 @@ a{
 	transition: 0.5s;
 }
 
+.body-fixed{
+	overflow: hidden;
+}
+
 .mobile-menu-on{
 	transform: translateX(0);
 	transition: 1s;

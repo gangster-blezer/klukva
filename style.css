@@ -371,12 +371,13 @@ button::-moz-focus-inner {
 
 .popular{
 	display: flex;
-	
+	transition: 1s;
 	width: 85vw;
 	-width: 1200px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	opacity: 1;
 }
 
 .popularinfo{
@@ -648,8 +649,14 @@ button::-moz-focus-inner {
 		width: 96vw;
 	}
 
+	.popular-off{
+		-display: none;
+		position: absolute;
+		opacity: 0;
+	}
+
 	.poplular-slider-track{
-		width: calc((96vw * 5) + 80px);
+		width: 100%;
 	}
 
 	.desing-project{
@@ -732,10 +739,15 @@ button::-moz-focus-inner {
 	.pop-sl-itm{
 		font-size: 14px;
 		font-weight: bold;
+		user-select: none;
 		padding-bottom: 3px;
 		border-bottom: 2px solid transparent;
 		color: #CDCBCB;
 		transition: 1s;
+	}
+
+	.pop-sl-itm:hover{
+		cursor: pointer;
 	}
 
 	.pop-sl-itm-on{
@@ -748,9 +760,18 @@ button::-moz-focus-inner {
 		display: none;
 	}
 
+	.about-us{
+		justify-content: center;
+	}
+
 	.about-item{
 		flex-direction: row;
-		width: auto;
+		justify-content: space-between;
+		width: 400px;
+	}
+
+	.about-item>p{
+		text-align: left;
 	}
 
 
