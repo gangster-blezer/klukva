@@ -3,6 +3,7 @@ var track = document.getElementsByClassName('poplular-slider-track')[0];
 var mrg = 20;
 
 function slideset(n,bt) {
+  if(window.innerWidth>481){
   if(numprev==undefined){
       numprev = 1;
     }
@@ -61,6 +62,7 @@ function slideset(n,bt) {
 	  
 
 	}, 10);
+}
 }
 
 //getTrX(document.querySelector('.poplular-slider-track'));
