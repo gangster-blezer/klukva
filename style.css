@@ -655,7 +655,7 @@ button::-moz-focus-inner {
 
 	.popular-off{
 		position: absolute;
-		opacity: 0;
+		transform: translateX(-100vw);
 	}
 
 	.poplular-slider-track{
@@ -721,6 +721,7 @@ button::-moz-focus-inner {
 
 	.popular{
 		flex-direction: column;
+		background-color: white;
 	}
 
 	.cimg{
