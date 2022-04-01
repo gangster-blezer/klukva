@@ -1,7 +1,6 @@
 function menu(add,del) {
 	document.getElementsByClassName(del)[0].classList.add(add);
 	document.getElementsByClassName(del)[0].classList.remove(del);
-	bodyfixed(true);
 }
 
 function changeClass(obj,add,del){
@@ -33,7 +32,6 @@ document.getElementsByClassName("close-window")[2].addEventListener("click", clo
 function close(){
 	menu('black-part-off','black-part-on');
 	menu('window-off','window-on');
-	bodyfixed(false);
 }
 
 

@@ -191,3 +191,63 @@ a{
 	text-align: center;
 	font-size: 14px;
 }
+
+@media (max-width: 481px){
+	.zag{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.setka{
+		width: 100%;
+	}
+
+	.big-img{
+		width: 100%;
+	}
+
+	.setkaitm{
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+		width: 100%;
+	}
+
+	.setkaitem-on{
+		position: relative;
+		opacity: 1;
+		z-index: 1;
+	}
+
+	.klukva-txt{
+		width: 90%;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.klukva-txt>p{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.consultation{
+		display: none;
+	}
+
+	.about-us{
+		justify-content: center;
+	}
+
+	.about-item{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 400px;
+		margin-top: 10px;
+	}
+
+	.about-item>p{
+		text-align: left;
+		width: 250px;
+	}
+}

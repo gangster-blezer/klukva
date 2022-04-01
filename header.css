@@ -21,6 +21,10 @@ a{
 	color: #A3A3A3;
 }
 
+.sub-small-menu-txt{
+	font-size: 20px;
+}
+
 .anim{
 	transition: 0.5s;
 }
@@ -306,6 +310,13 @@ ul{
 		flex-direction: column;
 		justify-content: space-between;
 		height: 300px;
+	}
+
+	.mobile-sub-menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 250px;
 	}
 
 	.mobile-nav{
