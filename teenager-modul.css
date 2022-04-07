@@ -195,10 +195,14 @@ a{
 
 .plus{
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	background-image: url(img/teenager-modul/plus.svg);
-	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	background-color: #525252;
+	border-radius: 100%;
+	color: white;
 	top: 20%;
 	right: 62%;
 }
@@ -232,12 +236,11 @@ a{
 }
 
 .scroll-items{
-	width: calc((40vw * 7) + 5vw * 6);
 	display: flex;
-	justify-content: space-between;
 }
 
 .scroll-item{
+	position: relative;
 	width: 490px;
 	height: auto;
 	display: flex;
@@ -246,10 +249,20 @@ a{
 	margin-bottom: 20px;
 }
 
+.discription{
+	min-width: 250px;
+}
+
 .scroll-img{
 	width: 230px;
-	height: 135px;
+	height: auto;
 	user-select: none;
+}
+
+.scroll-img-pod{
+	width: 100px;
+	position: absolute;
+	bottom: 0;
 }
 
 .scroll-teenager-slider>div>*{
@@ -262,6 +275,7 @@ a{
 	padding: 2px 5px;
 	border: 1px solid black;
 	border-radius: 10px;
+	margin-bottom: 3px;
 }
 
 .price{
@@ -334,12 +348,17 @@ a{
 	width: 180px;
 	height: 210px;
 	transition: 0.3s;
-	-border: 1px solid black;
-	-background-color: red;
 }
 
 .corpus-colors{
+	width: 286px;
+	margin-top: 10px;
 	margin-bottom: 30px;
+}
+
+.fasad-colors{
+	width: 286px;
+	margin-top: 10px;
 }
 
 .setka{
@@ -355,4 +374,40 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+
+@media (max-width: 481px){
+	.teenagers-img-logo{
+		width: 90%;
+	}
+
+	.discription{
+		min-width: calc(100vw - 250px);
+	}
+
+	.colors-game{
+		flex-direction: column;
+		width: 95%;
+	}
+
+	.colors-discription{
+		width: 100%;
+	}
+
+	.colors-block{
+		width: 100%;
+	}
+
+	.corpus-colors{
+		width: 100%;
+	}
+	
+	.fasad-colors{
+		width: 100%;
+	}
+
+	.setka{
+		display: none;
+	}
 }
