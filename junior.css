@@ -160,6 +160,7 @@ a{
 	display: flex;
 	width: 6000vw;
 	user-select: none;
+	touch-action: none;
 }
 
 .polu-slide{
