@@ -1,33 +1,38 @@
 class SuperSlider{
-  constructor(trackClass,slideClass,mrg,anim){
-    //this.track = document.getElementsByClassName(trackClass)[0];
+  constructor(trackClass,slideClass,mrg,anim,sliderDots,ActiveDot){
     this.track = document.querySelector("."+trackClass);
     this.slideClass = slideClass;
     this.mrg = mrg;
     this.slides = document.getElementsByClassName(slideClass);
     this.slideWidth = document.querySelector("."+slideClass).offsetWidth;
+    console.log(this.slideWidth)
+    this.slideWidthnew = Number(getComputedStyle(document.querySelector("."+slideClass)).width.split("px")[0])
+    
     this.slidesCount = document.getElementsByClassName(slideClass).length;
+    //this.track.style.width = 
     let firstSlide = this.slides[0].cloneNode(true);
     let lastSlide = this.slides[this.slidesCount-1].cloneNode(true);
     this.track.prepend(lastSlide);
     this.track.append(firstSlide);
+    this.sliderDots = document.getElementsByClassName(sliderDots);
+    this.activeDot = ActiveDot;
+    this.top_coord = this.track.getBoundingClientRect().top;
     
     if (mrg=="full"){
       this.slideMargin = window.innerWidth - document.querySelector("."+slideClass).offsetWidth;
     }else{
-      this.slideMargin = mrg;
+      this.slideMargin = Number(getComputedStyle(document.querySelector("."+slideClass)).marginRight.split("px")[0]);
     }
     
+    //this.track.style.width = (this.slideWidth + this.slideMargin) * (this.slidesCount+2)+"px";
+    console.log(this.slideWidth + this.slideMargin)
     this.num_slide = 0;
     this.anim = anim;
     this.setSlide(1);
     window.addEventListener('resize', this.resizeEv);
     this.track.addEventListener('mousedown', this.swipeStart);
     this.track.addEventListener('pointerdown', this.swipeStart);
-    this.track.addEventListener('mouseleave', this.swipeEnd);
-    
-    //(document.querySelector("."+trackClass).offsetWidth - this.slideWidth)/5;
-    //console.log((document.querySelector("."+trackClass).offsetWidth - (5*this.slideWidth)))
+    //this.track.addEventListener('mouseleave', this.swipeEnd);
   }
 
   getSlidePath(num){
@@ -59,24 +64,30 @@ class SuperSlider{
         this.track.removeEventListener('pointerdown', this.swipeStart);
       }
 
-      
+      if(this.sliderDots!="false"){
+        //this.sliderDots[n-1].classList.add(this.activeDot);
+      }
+
 
       let tran = -this.getSlidePath(n);
-      this.track.setAttribute("style", "transform: translateX("+tran+"px);");
+      this.track.style.transform = "translateX("+tran+"px)";
       this.num_slide = n;
-      console.log("начало анимации")
+      
       this.track.addEventListener('transitionend', this.transformEnd);
   }
 
   resizeEv = () => {
     this.slideWidth = document.querySelector("."+this.slideClass).offsetWidth;
-    this.setSlide(this.num_slide);
+    
 
     if (this.mrg=="full"){
       this.slideMargin = window.innerWidth - document.querySelector("."+this.slideClass).offsetWidth;
     }else{
-      this.slideMargin = this.mrg;
+      this.slideMargin = Number(getComputedStyle(document.querySelector("."+this.slideClass)).marginRight.split("px")[0]);
     }
+    //this.track.style.width = (this.slideWidth + this.slideMargin) * (this.slidesCount+2)+"px";
+    this.setSlide(this.num_slide);
+    console.log("установлен по идее")
   } 
 
   transformEnd = () => {
@@ -86,11 +97,11 @@ class SuperSlider{
     this.track.removeEventListener('transitionend', this.transformEnd);
     if(this.num_slide==0){
       this.track.classList.remove(this.anim);
-      this.track.setAttribute("style", "transform: translateX("+-this.getSlidePath(this.slidesCount)+"px);");
+      this.track.style.transform = "translateX("+-this.getSlidePath(this.slidesCount)+"px)";
       this.num_slide=this.slidesCount;
     }else if(this.num_slide==this.slidesCount+1){
       this.track.classList.remove(this.anim);
-      this.track.setAttribute("style", "transform: translateX("+-this.getSlidePath(1)+"px);");
+      this.track.style.transform = "translateX("+-this.getSlidePath(1)+"px)";
       this.num_slide=1;
     }
   }
@@ -102,7 +113,6 @@ class SuperSlider{
     this.a = Math.abs(this.getTrX(this.track));
     this.posInit = this.posX1 = evt.clientX;
     this.posYInit = this.posY1 = evt.clientY;
-    console.log("startswp");
     this.track.addEventListener('mousemove', this.swipeAction);
     this.track.addEventListener('pointermove', this.swipeAction);
 
@@ -120,11 +130,10 @@ class SuperSlider{
     this.posY2 = this.posY1 - evt.clientY;
     this.posY1 = evt.clientY;
     this.posX2 = this.posX1 - evt.clientX;
-    console.log("move");
     this.posX1 = evt.clientX;
       
     this.a = Number(this.a) + Number(this.posX2);
-    this.track.setAttribute("style", "transform: translateX("+(-this.a)+"px);");
+    this.track.style.transform = "translateX("+(-this.a)+"px)";
   }
 
   swipeEnd = () => {
@@ -153,12 +162,7 @@ class SuperSlider{
   }
 
   mouseOutSlider = () => {
-    console.log("моус");
+    
   }
 }
-
-
-
-//var popularSlider = new SuperSlider("poplular-slider-track","popular","full","trans");
-//console.log(popularSlider.GetEvent);
 

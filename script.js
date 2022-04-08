@@ -70,8 +70,8 @@ window.onload = function(){
 	let categories_menu = new anim('block',4,"proyv-end","proyv-start",document.getElementsByClassName('imgd')[0]);
 	
 	let zag_popular_anim = new anim('zag-pop',1,"left-end","left-start",document.getElementsByClassName('poplular-slider-track')[0]);
-	let text_popular_anim = new anim('popularinfo',1,"left-end","left-start",document.getElementsByClassName('poplular-slider-track')[0]);
-	let img_popular_anim = new anim('popular_first_img',1,"right-end","right-start",document.getElementsByClassName('poplular-slider-track')[0]);
+	//let text_popular_anim = new anim('popularinfo',1,"left-end","left-start",document.getElementsByClassName('poplular-slider-track')[0]);
+	//let img_popular_anim = new anim('popular_first_img',1,"right-end","right-start",document.getElementsByClassName('poplular-slider-track')[0]);
 
 	let about_us_anim = new anim('about-item',4,"proyv-end","proyv-start",document.getElementsByClassName('about-us')[0]);
 	let best_img_anim = new anim('best-slide',1,"left-end","left-start",document.getElementsByClassName('best-slider-track')[0]);
@@ -92,8 +92,8 @@ window.onload = function(){
 	sl_arow_nx.visible();
 	categories_menu.visible();
 	zag_popular_anim.visible();
-	text_popular_anim.visible();
-	img_popular_anim.visible();
+	//text_popular_anim.visible();
+	//img_popular_anim.visible();
 	about_us_anim.visible();
 	best_img_anim.visible();
 
@@ -115,8 +115,8 @@ window.addEventListener('scroll', function() {
 	sl_arow_nx.visible();
   	categories_menu.visible();
   	zag_popular_anim.visible();
-  	text_popular_anim.visible();
-  	img_popular_anim.visible();
+  	//text_popular_anim.visible();
+  	//img_popular_anim.visible();
   	about_us_anim.visible();
   	best_img_anim.visible();
 

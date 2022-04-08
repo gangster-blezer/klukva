@@ -213,12 +213,12 @@
 		</div>
 		<div class="poplular-slider-track">
 		<div class="popular">
-		<div class="popularinfo left-start">
+		<div class="popularinfo">
 			<h4 class="sub-zag none-select-txt">JUNIOR</h4>
 			<p class="small-txt none-select-txt">Подростковая мебель уже не должна быть детской </br> и милой, она должна быть стильной, что выражается</br>в строгих формах, интересной цветовой гамме</br>и высоком качестве. Именно это описание подходит</br>как нельзя лучше для коллекции Junior.</br></br>Cерия имеет очень продуманную эргономику,</br>включающую удобные шкафы, скрытые полки</br>и дополнительные места хранения, позволяющие</br>легко поддерживать порядок в комнате.</p>
 			<div class="button-klukva small-txt popularbtn"><a href="junior.html" style="color: white;">Перейти в каталог</a></div>
 		</div>
-			<img src="img/polularslider/banner.png" class="cimg popular_first_img right-start" alt="" draggable="false">
+			<img src="img/polularslider/banner.png" class="cimg popular_first_img" alt="" draggable="false">
 		</div>
 
 		<div class="popular popular-off">
@@ -266,7 +266,6 @@
 				<button onclick="slideset(4,this)" id="4"></button>
 				<button onclick="slideset(5,this)" id="5"></button>
 	</div>
-	<script src="popularslider.js"></script>
 	<script src="popularmobile.js"></script>
 	</div>
 
@@ -476,4 +475,10 @@
 	<img src="img/logo_footer.svg" alt="">
 </footer>
 </body>
+<script src="SuperSlider.js"></script>
+<script>
+	if(window.innerWidth>481){
+		var popularSlider = new SuperSlider("poplular-slider-track","popular","none","trans","none","none");
+	}
+		</script>
 </html>
