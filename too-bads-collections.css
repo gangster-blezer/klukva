@@ -158,6 +158,12 @@ button::-moz-focus-inner {
 	margin-right: auto;
 }
 
+.product-top-img{
+	width: 450px;
+	display: block;
+	margin: 20px auto;
+}
+
 .product-images{
 	width: 600px;
 	border-radius: 15px;
@@ -276,4 +282,77 @@ button::-moz-focus-inner {
 
 .parm-list{
     list-style: inside;
+}
+
+.colors-game{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+.colors-discription{
+	width: 333.5px;
+}
+
+.color-corp-btn{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 100px;
+	margin-left: 4px;
+	margin-bottom: 10px;
+}
+
+.color-fasad-btn{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border: 0.5px solid black;
+	border-radius: 100px;
+	margin-left: 4px;
+	margin-bottom: 10px;
+}
+
+.colors-panels{
+	position: relative;
+	width: 270px;
+	height: 370px;
+}
+
+.panel{
+	position: absolute;
+	width: 180px;
+	height: 210px;
+	transition: 0.3s;
+}
+
+.corpus-colors{
+	width: 286px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.fasad-colors{
+	width: 286px;
+	margin-top: 10px;
+}
+
+.zag2{
+	width: 100%;
+	/* ВСЕГДА ПОМОЖЕМ С ВЫБОРОМ */
+	font-family: Manrope;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.zag2>span{
+	color: #EE2E3B;
+}
+
+.small-txt{
+	color: black;
+	font-size: 14px;
 }

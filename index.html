@@ -298,7 +298,7 @@
 	<div class="best contaner-center">
 	<h2 class="zag"><span>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ </span>МЕСЯЦА</h2>
 	<div class="best-slider-track">
-		<div class="best-slide left-start">
+		<div class="best-slide">
 			<picture>
  				<source srcset="img/bestslide/1-mobile.png" media="(max-width: 481px)">
  				<img src="img/bestslide/1.png" alt="" draggable="false">
@@ -329,7 +329,7 @@
 				<button onclick="slidesetb(3,this)" id="3b"></button>
 				<button onclick="slidesetb(4,this)" id="4b"></button>
 	</div>
-	<script src="best-slider.js"></script>
+	
 </div>
 <div class="map">
 	<div class="slider_names">
@@ -480,5 +480,7 @@
 	if(window.innerWidth>481){
 		var popularSlider = new SuperSlider("poplular-slider-track","popular","none","trans","none","none");
 	}
+
+	var bestSlider = new SuperSlider("best-slider-track","best-slide","none","trans","none","none");
 		</script>
 </html>

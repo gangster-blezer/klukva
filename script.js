@@ -74,7 +74,7 @@ window.onload = function(){
 	//let img_popular_anim = new anim('popular_first_img',1,"right-end","right-start",document.getElementsByClassName('poplular-slider-track')[0]);
 
 	let about_us_anim = new anim('about-item',4,"proyv-end","proyv-start",document.getElementsByClassName('about-us')[0]);
-	let best_img_anim = new anim('best-slide',1,"left-end","left-start",document.getElementsByClassName('best-slider-track')[0]);
+	//let best_img_anim = new anim('best-slide',1,"left-end","left-start",document.getElementsByClassName('best-slider-track')[0]);
 
 	let map_anim = new anim('yandexmap',1,"bottom-end","bottom-start",document.getElementsByClassName('map')[0]);
 	let map_info_anim = new anim('map-info',1,"proyv-end","proyv-start",document.getElementsByClassName('map')[0]);
@@ -95,7 +95,7 @@ window.onload = function(){
 	//text_popular_anim.visible();
 	//img_popular_anim.visible();
 	about_us_anim.visible();
-	best_img_anim.visible();
+	//best_img_anim.visible();
 
 	map_anim.visible();
 	map_info_anim.visible();
@@ -118,7 +118,7 @@ window.addEventListener('scroll', function() {
   	//text_popular_anim.visible();
   	//img_popular_anim.visible();
   	about_us_anim.visible();
-  	best_img_anim.visible();
+  	//best_img_anim.visible();
 
   	map_anim.visible();
 	map_info_anim.visible();

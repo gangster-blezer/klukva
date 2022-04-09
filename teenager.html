@@ -117,33 +117,33 @@
 		<img src="img/Next.svg" class="arrow" alt="next_arrow" onclick="colorSlider.setSlide('next')">
 		<div class="slider-color-wrapper">
 			<div class="slide-color">
-				<a draggable="false" class="polu-slider-link" href="t.html">
+				<a class="polu-slide-link" draggable="false" href="t.html">
 					<img src="img/teenager/1.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">БЕТОН ЧИКАГО ТЕМНО-СЕРЫЙ</span>
 				</a>
-				<a draggable="false" class="polu-slider-link">
+				<a class="polu-slide-link" draggable="false">
 					<img src="img/teenager/2.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">ХРОМИКС БЕЛЫЙ</span>
 				</a>
 			</div>
 
 			<div class="slide-color">
-				<a draggable="false">
+				<a class="polu-slide-link" draggable="false">
 					<img src="img/teenager/3.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">САТИН</span>
 				</a>
-				<a class="polu-slide" draggable="false">
+				<a class="polu-slide-link" draggable="false" href="teenager-modul.html">
 					<img src="img/teenager/4.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">СЛАНЕЦ МЕТАЛЛ</span>
 				</a>
 			</div>
 
 			<div class="slide-color">
-				<a draggable="false">
+				<a class="polu-slide-link" draggable="false">
 					<img src="img/teenager/5.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">НИАГАРА ЗЕЛЕНАЯ</span>
 				</a>
-				<a class="polu-slide" draggable="false">
+				<a class="polu-slide-link" draggable="false">
 					<img src="img/teenager/6.png" class="polu-slide" alt="" draggable="false">
 					<span class="name-junion sub-zag">БЕЖЕВЫЙ</span>
 				</a>
@@ -152,7 +152,11 @@
 	</div>
 	<script src="SuperSlider.js"></script>
 	<script>
-		var colorSlider = new SuperSlider("slider-color-wrapper","slide-color","full","trans");
+		if(window.innerWidth>481){
+			var colorSlider = new SuperSlider("slider-color-wrapper","slide-color","full","trans");
+		}else{
+			var colorSlider = new SuperSlider("slider-color-wrapper","polu-slide-link","full","trans");
+		}
 	</script>
 	<div class="info-klukva contaner-center">
 	<h2 class="zag" style="margin-top: 0px;">МЕБЕЛЬ <span>КЛЮКВА</span></h2>

@@ -30,7 +30,6 @@ class SuperSlider{
     this.anim = anim;
     this.setSlide(1);
     window.addEventListener('resize', this.resizeEv);
-    this.track.addEventListener('mousedown', this.swipeStart);
     this.track.addEventListener('pointerdown', this.swipeStart);
     //this.track.addEventListener('mouseleave', this.swipeEnd);
   }
@@ -92,7 +91,6 @@ class SuperSlider{
 
   transformEnd = () => {
     console.log("end anim" + this.num_slide);
-    this.track.addEventListener('mousedown', this.swipeStart);
     this.track.addEventListener('pointerdown', this.swipeStart);
     this.track.removeEventListener('transitionend', this.transformEnd);
     if(this.num_slide==0){
@@ -113,10 +111,8 @@ class SuperSlider{
     this.a = Math.abs(this.getTrX(this.track));
     this.posInit = this.posX1 = evt.clientX;
     this.posYInit = this.posY1 = evt.clientY;
-    this.track.addEventListener('mousemove', this.swipeAction);
     this.track.addEventListener('pointermove', this.swipeAction);
 
-    this.track.addEventListener('mouseup', this.swipeEnd);
     this.track.addEventListener('pointerup', this.swipeEnd);
 
   }

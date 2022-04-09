@@ -198,6 +198,17 @@ a{
 
 @media (max-width: 481px){
 
+	.zag{
+		font-size: 30px;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.contaner-center{
+		margin-bottom: 40px;
+	}
+
 	.slider_names{
 		display: flex;
 		flex-wrap: wrap;
@@ -234,6 +245,42 @@ a{
 		text-align: center;
 	}
 
+	.setkaitm{
+		margin-bottom: 0;
+	}
+
+	.about-us{
+		width: 100%;
+	}
+
+	.about-us{
+		justify-content: center;
+	}
+
+	.about-item{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 340px;
+		margin-top: 10px;
+	}
+
+	.about-item>p{
+		text-align: left;
+		width: 250px;
+		font-size: 14px;
+    	line-height: 1.2;
+	}
+
+	.aboutImg{
+		width: 70px;
+		height: 70px;
+	}
+
+	.aboutImg>img {
+		width: 33px;
+		height: 40px;
+	}
+
 	.setka{
 		width: 100%;
 	}
@@ -247,16 +294,25 @@ a{
 	}
 
 	.setkaitm{
-		position: absolute;
-		opacity: 0;
-		z-index: -1;
 		width: 100%;
+		position: absolute;
+		z-index: -1;
+		transition: 1s;
+		transform: translateX(-150vw);
 	}
 
 	.setkaitem-on{
 		position: relative;
-		opacity: 1;
 		z-index: 1;
+		transform: none;
+	}
+
+	.setkaitem-off{
+		
+	}
+
+	.c-img , .litle-img{
+		width: 100%;
 	}
 
 	.klukva-txt{
@@ -276,18 +332,34 @@ a{
 	}
 
 	.about-us{
+		width: 100%;
+	}
+
+	.about-us{
 		justify-content: center;
 	}
 
 	.about-item{
 		flex-direction: row;
 		justify-content: space-between;
-		width: 400px;
+		width: 340px;
 		margin-top: 10px;
 	}
 
 	.about-item>p{
 		text-align: left;
 		width: 250px;
+		font-size: 14px;
+    	line-height: 1.2;
+	}
+
+	.aboutImg{
+		width: 70px;
+		height: 70px;
+	}
+
+	.aboutImg>img {
+		width: 33px;
+		height: 40px;
 	}
 }

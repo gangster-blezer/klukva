@@ -246,3 +246,38 @@ a{
 	text-align: center;
 	font-size: 14px;
 }
+
+@media (max-width: 481px){
+	.zag{
+		font-size: 30px;
+	}
+
+	.junior{
+		display: none;
+	}
+
+	.info-klukva{
+		display: none;
+	}
+
+	.slide-color{
+		width: auto;
+		margin-right: 0;
+	}
+
+	.slide-color>a{
+		width: 100vw;
+	}
+
+	.polu-slide{
+		width: 100vw;
+	}
+
+	.name-junion{
+		display: none;
+	}
+
+	.arrow{
+		display: none;
+	}
+}

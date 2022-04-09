@@ -449,7 +449,7 @@ button::-moz-focus-inner {
 
 .best-slider-track{
 	position: relative;
-	width: calc(85vw * 4);
+	width: 50000px;
 	bottom: 0;
 	display: flex;
 	height: 100%;
@@ -639,10 +639,17 @@ button::-moz-focus-inner {
 	.zag{
 		font-size: 30px;
 		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.contaner-center{
+		margin-bottom: 40px;
 	}
 
 	.small-txt{
-		font-size: 18px;
+		font-size: 14px;
+		line-height: 1.8;
 	}
 
 	.about-us{
@@ -653,13 +660,9 @@ button::-moz-focus-inner {
 		width: 96vw;
 	}
 
-	.best-slider-track{
-		width: calc(96vw * 4);
-	}
-
 	.popular-off{
 		position: absolute;
-		transform: translateX(-100vw);
+		transform: translateX(-150vw);
 	}
 
 	.poplular-slider-track{
@@ -680,6 +683,10 @@ button::-moz-focus-inner {
 
 	.slblack, #back, #next{
 		display: none;
+	}
+
+	.popularinfo{
+		width: 370px;
 	}
 
 
@@ -775,13 +782,25 @@ button::-moz-focus-inner {
 	.about-item{
 		flex-direction: row;
 		justify-content: space-between;
-		width: 400px;
+		width: 340px;
 		margin-top: 10px;
 	}
 
 	.about-item>p{
 		text-align: left;
 		width: 250px;
+		font-size: 14px;
+    	line-height: 1.2;
+	}
+
+	.aboutImg{
+		width: 70px;
+		height: 70px;
+	}
+
+	.aboutImg>img {
+		width: 33px;
+		height: 40px;
 	}
 
 
@@ -837,6 +856,9 @@ button::-moz-focus-inner {
 
 	.contact-txt{
 		text-align: center;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.contact-soc{
@@ -855,5 +877,9 @@ button::-moz-focus-inner {
 
 	.small-btn-txt{
 		font-size: 14px;
+	}
+
+	.contact-zag{
+		width: 300px;
 	}
 }

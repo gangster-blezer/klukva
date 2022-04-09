@@ -251,6 +251,10 @@ a{
 
 .discription{
 	min-width: 250px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .scroll-img{
@@ -276,6 +280,12 @@ a{
 	border: 1px solid black;
 	border-radius: 10px;
 	margin-bottom: 3px;
+	transition: 0.5s;
+}
+
+.elips-btn-on{
+		color: white;
+		background-color: black;
 }
 
 .price{
